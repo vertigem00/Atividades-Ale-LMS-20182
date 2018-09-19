@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .navbar {
+            overflow: auto;
+            background-color: rgb(76, 175, 80);
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbt {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover
+        .dropbt {
+            background-color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        .vertical-menu {
+        width: 200px;
+        }
+
+        .vertical-menu a {
+        background-color: white;
+        color: black;
+        display: block;
+        padding: 4px;
+        text-decoration: none;
+        font-size: 20px;
+        }
+
+        .vertical-menu a:hover {
+        background-color: #ccc;
+        }
+
+        .vertical-menu a.active {
+        color: white;
+        font-size: 20px
+        }
+    </style>
+</head>
+
+<body>
+
+    <div><img src="logo.png" alt="w3school" width="30%" height="30%"></div>
+    
+    <div class="navbar">
+
+        <div class="dropdown">
+        <button class="dropbt">Tutorials</button>
+        <div class="dropdown-content">
+            <h1>HTML</h1>
+            <a href="#">Learn HTML</a>
+            <a href="#">Learn CSS</a>
+            <a href="#">Learn W3.CSS</a>
+            <a href="#">Learn Colors</a>
+            <a href="#">Learn Bootstrap 3</a>
+            <a href="#">Learn Bootstrap 4</a>
+            <a href="#">Learn Icons</a>
+            <a href="#">Learn Graphics</a>
+            <a href="#">Learn How to</a>
+        </div>
+    </div>
+    <a href="#alo">References</a>
+</div>
+
+<div> <div class="vertical-menu">
+        <h2 class="active">Html and CSS</h2>
+        <a href="#">Learn HTML</a>
+        <a href="#">Learn CSS</a>
+        <a href="#">Learn W3.CSS</a>
+        <a href="#">Learn Colors</a>
+        <a href="#">Learn Bootstrap 3</a>
+        <a href="#">Learn Bootstrap 4</a>
+        <a href="#">Learn Icons</a>
+        <a href="#">Learn Graphics</a>
+        <a href="#">Learn How to</a>
+        <br>
+        <h2 class="active">JavaScript</h2>
+        <a href="#">Learn JavaScript</a>
+        <a href="#">Learn jQuery</a>
+        <a href="#">Learn AngularJS</a>
+        <a href="#">Learn JSON</a>
+        <a href="#">Learn AJAX</a>
+        <a href="#">Learn W3.JS</a>
+      </div> </div>
+
+</body>
+</html>
